@@ -2,73 +2,83 @@
 
 ## Standard commands
 
-- `ctrl + N` new file (at the same directory level as current file)
-- `ctrl + shift + P` command palette
-- `ctrl + P` select file palette
-- `ctrl + G` select line number
-- `ctrl + K + ctrl + S` display shortcuts
-- `ctrl + O` open file
-- `ctrl + K + ctrl + O` open folder 
-- `ctrl + +/-` zoom in/out entire editor, not only code
+- `Ctrl + N` new file (at the same directory level as current file)
+- `Ctrl + Shift + P` command palette
+- `Ctrl + P` select file palette
+- `Ctrl + G` select line number
+- `Ctrl + K Ctrl + S` display shortcuts
+- `Ctrl + O` open file
+- `Ctrl + K Ctrl + O` open folder 
+- `Ctrl + +/-` zoom in/out entire editor, not only code
+- `Alt + Left/Right` go to previous/next location
+- `Ctrl + S` save changes
+- `> save all (...)` save all changes
+- `Ctrl + F` search file
+- `F3` moves to next cursor after `Ctrl + F`
+- `Alt + Enter` places a cursor at all words matched by search
+- `Ctrl + Shift + C` open new terminal in current folder (doesn't work from terminal focus)
 
 ## Change Focus
 
-- `ctrl + 1` first editor group focus (change number for other group)
-- `` ctrl + `  `` terminal focus
-- `ctrl + shift + E` explorer focus
-- `ctrl + B` open/close current sidebar (unless working with markdown for whatever reason)
-- `alt` top navbar focus
-- `ctrl + PageUp/PageDown` cycle opened files (goes to other groups as well)
-  
+- `Ctrl + 1` first editor group focus (change number for other group)
+- `` Ctrl + `  `` terminal focus
+- `Ctrl + Shift + E` explorer focus
+- `Ctrl + B` open/close current sidebar (unless working with markdown for whatever reason)
+- `Alt` top navbar focus
+- `Ctrl + PageUp/PageDown` cycle opened files (goes to other groups as well)  
 
-## File focus (might work in other focuses too)
+## Cursor focus (shortcuts that work depending on where the cursor is)
 
-- `alt + left/right` go to where you were before/after
-- `ctrl + S` save changes
-- `> save all` save all changes
-- `ctrl + F4` `ctrl + W`close file
-- `ctrl + C` copies current line (with endline)
-- `ctrl + L` select entire line
-- `alt + shift + right` select current word highlighted by cursor
-- `ctrl + D` matches currently highlighted text and adds a cursor to the matches
-- `F3` moves to next cursor (similar to `ctrl + D` without adding a new cursor)
-- `ctrl + U` unselects last cursor after matching
-- `alt + up/down` moves current line above/below
-- `alt + shift + up/down` copies current line and inserts it above/below
-- `ctrl + left/right` navigates line one word at a time
-- `shift + move_cursor` highlights region between old cursor position and current cursor position
-- `ctrl + shift + move_cursor` the two above combined
-- `ctrl + up/down` moves view up/down one row
-- `ctrl + alt + left/right` moves current file to different split view left/right (and/or creates/closes that preview)
+- `Ctrl + C` copies current line (with endline)
+- `Ctrl + L` select entire line
+- `Alt + Shift + Right` select current word highlighted by cursor
+- `Ctrl + D` matches currently highlighted text and adds a cursor to the matches
+- `Ctrl + U` unselects last cursor after matching
+- `Alt + Up/Down` moves current line above/below
+- `Alt + Shift + Up/Down` copies current line and inserts it above/below
+- `Ctrl + Left/Right` navigates line one word at a time
+- `Shift + Left/Right` move cursor while marking selection
+- `Ctrl + Shift + Click` the two above combined
+- `Shift + Click` highlights region between old and current cursor position
+- `Ctrl + Up/Down` moves view up/down one row
 - `PageUp/PageDown` navigate file up/down quickly
-- `ctrl + K + ctrl + I` show documentation of function present at cursor (same as hover)
-- `ctrl + shift + C` open new terminal in same location (doesn't work in terminal focus!)
-- `ctrl + shift + [ or ]` `ctrl + K + L` collapse/uncollapse code
-- `Home / End` go to beginning/end of line
-- `ctrl + f` then `alt + enter` places cursors at all lines matched by search
+- `Home/End` go to beginning/ending of line
+- `Ctrl + Home/End` go to beginning/ending of editor
+- `Ctrl + K Ctrl + I` show documentation of function present at cursor (same as hover)
+- `Ctrl + Click / F12` go to definition
+- `Ctrl + Shift + [/]` `ctrl + K + L` collapse/uncollapse code
+
+## Editor focus & groups
+
+- `Ctrl + 1` first editor group focus (change number for other group)
+- `Ctrl + PageUp/PageDown` cycle editors, including ones accross multiple groups
+- `Ctrl + Shift + PageUp/PageDown` move current editor between open ones
+- `Ctrl + Alt + Left/Right` moves current editor to new group
+- `Ctrl + Tab` show open tabs in editor
+- `Ctrl + W or Ctrl + F4` close active editor
+- `Ctrl + K W` close all editors in current editor group
+- `Ctrl + K ctrl + W` close all editors
+
 
 ## Explorer focus
 
-- `ctrl + shift + E` explorer focus/defocus
+- `Ctrl + Shift + E` explorer focus/defocus
 - `Enter` select current file
 - `Delete` delete current file
-- `ctrl + Enter` display current file (in different group*?)
+- `Ctrl + Enter` display current file (in different group*?)
 - `F2` rename selected file     
-- `shift + alt + c` copy path of selected file        
-- `ctrl + k ctrl + shift + c` copy relative path of selected file
+- `Shift + Alt + c` copy path of selected file        
+- `Ctrl + k ctrl + Shift + c` copy relative path of selected file
 
 ## Terminal focus
 
-- `` ctrl + `  `` terminal focus
-- `` ctrl + shift + `  `` add a new terminal
-- `ctrl + shift + 5` add a new split terminal
-- `ctrl + shift + \` focus terminal tabs (from terminal focus)
-- `ctrl + up/down` cycle terminal logs (fast)
-- `shift + PageUp/PageDown` cycle terminal logs (slower)
-- `ctrl + alt + PageUp/PageDown` cycle terminal logs (line by line)
-- `ctrl + PageUp/PageDown` cycle terminals
-- `alt + left/right` cycle split terminals
+- `` Ctrl + `  `` terminal focus
+- `` Ctrl + Shift + `  `` add a new terminal
+- `Ctrl + Shift + 5` add a new split terminal
+- `Ctrl + Shift + \` focus terminal tabs (from terminal focus)
+- `Ctrl + up/down` cycle terminal logs (fast)
+- `Shift + PageUp/PageDown` cycle terminal logs (slower)
+- `Ctrl + Alt + PageUp/PageDown` cycle terminal logs (line by line)
+- `Ctrl + PageUp/PageDown` cycle terminals
+- `Alt + left/right` cycle split terminals
 
-## View Documentation
-- `ctrl + k i` display documentation where current cursor is
-- `F12` go to definition (like `ctrl + click`)
