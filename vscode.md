@@ -58,6 +58,7 @@
 - `Ctrl + W or Ctrl + F4` close active editor
 - `Ctrl + K W` close all editors in current editor group
 - `Ctrl + K ctrl + W` close all editors
+- `Ctrl + Shift + >` display all "items" (functions, variables, paragraphs) in editor (*)
 
 
 ## Explorer focus
