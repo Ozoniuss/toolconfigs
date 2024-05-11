@@ -44,9 +44,10 @@
 - `PageUp/PageDown` navigate file up/down quickly
 - `Home/End` go to beginning/ending of line
 - `Ctrl + Home/End` go to beginning/ending of editor
+- `Ctrl + .` open quick suggestions menu
 - `Ctrl + K Ctrl + I` show documentation of function present at cursor (same as hover)
 - `Ctrl + Click / F12` go to definition
-- `Ctrl + Shift + [/]` `ctrl + K + L` collapse/uncollapse code
+- `Ctrl + Shift + [/]` `ctrl + K + L` `Ctrl + K + Ctrl + [ / ]` collapse/uncollapse code
 
 ## Editor focus & groups
 
@@ -83,3 +84,8 @@
 - `Ctrl + PageUp/PageDown` cycle terminals
 - `Alt + left/right` cycle split terminals
 
+## Refactor flow
+
+- `Ctrl + Shift + F` to search everything
+- `Ctrl + Shift + H` to toggle global replace
+- `Ctrl + Alt + Enter` to execute
