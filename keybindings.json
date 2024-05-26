@@ -1,0 +1,66 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+[",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+]",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+4",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+alt+=",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+alt+-",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "workbench.action.terminal.newWithProfile",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "editorFocus || sideBarFocus"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "explorer.newFolder",
+        "when": "editorFocus || sideBarFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+k ctrl+/",
+        "command": "editor.action.blockComment",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "indent-jump.moveUp"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "indent-jump.moveDown"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "indent-jump.selectUp"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "indent-jump.selectDown"
+    }
+]
