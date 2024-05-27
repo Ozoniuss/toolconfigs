@@ -3,8 +3,6 @@
 ## Standard commands
 
 - `Ctrl + alt + N` new file (at the same directory level as current file) (CUSTOM, original `Ctrl + N`)
-- `Ctrl + N` new file, explorer focus or text input focus from same folder (CUSTOM)
-- `Ctrl + K Ctrl + N` new folder, explorer focus or text input focus from same folder (CUSTOM)
 - `Ctrl + Shift + P` command palette
 - `Ctrl + P` select file palette
 - `Ctrl + G` select line number
@@ -32,7 +30,7 @@
 
 - `Ctrl + C` copies current line (with endline)
 - `Ctrl + L` select entire line
-- `Alt + Shift + Right` select current word highlighted by cursor
+- `Alt + Shift + Left/Right` expand/shrink selection
 - `Ctrl + D` matches currently highlighted text and adds a cursor to the matches
 - `Ctrl + U` unselects last cursor after matching
 - `Alt + Up/Down` moves current line above/below
@@ -41,13 +39,15 @@
 - `Shift + Left/Right` move cursor while marking selection
 - `Ctrl + Shift + Click` the two above combined
 - `Shift + Click` highlights region between old and current cursor position
-- `Ctrl + Up/Down` moves view up/down one row
+- `Ctrl + Alt + [/]` moves view up/down one row without curosr (CUSTOM, original Ctrl + Up/Down)
 - `PageUp/PageDown` navigate file up/down quickly
 - `Home/End` go to beginning/ending of line
 - `Ctrl + Home/End` go to beginning/ending of editor
 - `Ctrl + .` open quick suggestions menu
 - `Ctrl + K Ctrl + I` show documentation of function present at cursor (same as hover)
 - `Ctrl + Click / F12` go to definition
+- `Ctrl + /` line comment
+- `Ctrl + K Ctrl + /` block comment (CUSTOM, no orignal, replaces some shortcut I forgot)
 - `Ctrl + Shift + [/]` `ctrl + K + L` `Ctrl + K + Ctrl + [ / ]` collapse/uncollapse code
 
 ## Editor focus & groups
@@ -60,12 +60,14 @@
 - `Ctrl + W or Ctrl + F4` close active editor
 - `Ctrl + K W` close all editors in current editor group
 - `Ctrl + K ctrl + W` close all editors
-- `Ctrl + Shift + >` display all "items" (functions, variables, paragraphs) in editor (*)
+- `Ctrl + Shift + .` display all "items" (functions, variables, paragraphs) in editor (*)
 
 
 ## Explorer focus
 
 - `Ctrl + Shift + E` explorer focus/defocus
+- `Ctrl + N` new file, explorer focus or text input focus from same folder (CUSTOM)
+- `Ctrl + K Ctrl + N` new folder, explorer focus or text input focus from same folder (CUSTOM)
 - `Enter` select current file
 - `Delete` delete current file
 - `Ctrl + Enter` display current file (in different group*?)
