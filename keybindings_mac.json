@@ -1,0 +1,120 @@
+// Place your key bindings in this file to override the defaults
+// Requires Windows VSCODE extensions shortcut, otherwise would probably
+// need some more manual work
+// Requires ctrl+left and ctrl+right to be disabled from Mission Control,
+// I've replaced every occurence of ctrl with opt there anyway.
+[
+    {
+        "key": "ctrl+cmd+[",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+cmd+]",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+4",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+cmd+=",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+cmd+-",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+cmd+`",
+        "command": "workbench.action.terminal.newWithProfile",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "editorFocus || sideBarFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+n",
+        "command": "explorer.newFolder",
+        "when": "editorFocus || sideBarFocus"
+    },
+    {
+        "key": "ctrl+cmd+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+k ctrl+/",
+        "command": "editor.action.blockComment",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "indent-jump.moveUp"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "indent-jump.moveDown"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "indent-jump.selectUp"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "indent-jump.selectDown"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    }
+]
