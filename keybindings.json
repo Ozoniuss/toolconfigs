@@ -34,12 +34,12 @@
         "when": "editorFocus || sideBarFocus"
     },
     {
-        "key": "ctrl+alt+n",
+        "key": "ctrl+k ctrl+n",
         "command": "explorer.newFolder",
         "when": "editorFocus || sideBarFocus"
     },
     {
-        "key": "ctrl+k ctrl+n",
+        "key": "ctrl+alt+n",
         "command": "workbench.action.files.newUntitledFile"
     },
     {
