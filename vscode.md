@@ -2,11 +2,12 @@
 
 ## Standard commands
 
-- `Ctrl + N` new file (at the same directory level as current file)
+- `Ctrl + alt + N` new file (at the same directory level as current file) (CUSTOM, original `Ctrl + N`)
+- `Ctrl + N` new file, explorer focus or text input focus from same folder (CUSTOM)
+- `Ctrl + K Ctrl + N` new folder, explorer focus or text input focus from same folder (CUSTOM)
 - `Ctrl + Shift + P` command palette
 - `Ctrl + P` select file palette
 - `Ctrl + G` select line number
-- `Ctrl + K Ctrl + S` display shortcuts
 - `Ctrl + O` open file
 - `Ctrl + K Ctrl + O` open folder 
 - `Ctrl + +/-` zoom in/out entire editor, not only code
