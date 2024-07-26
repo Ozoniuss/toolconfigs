@@ -1,12 +1,12 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl+alt+[",
+        "key": "ctrl+alt+pageDown",
         "command": "scrollLineDown",
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+]",
+        "key": "ctrl+alt+pageUp",
         "command": "scrollLineUp",
         "when": "textInputFocus"
     },
@@ -34,13 +34,13 @@
         "when": "editorFocus || sideBarFocus"
     },
     {
-        "key": "ctrl+k ctrl+n",
+        "key": "ctrl+k n",
         "command": "explorer.newFolder",
         "when": "editorFocus || sideBarFocus"
     },
     {
         "key": "ctrl+alt+n",
-        "command": "workbench.action.files.newUntitledFile"
+        "command": "workbench.action.files.newUntitledFile",
     },
     {
         "key": "ctrl+k ctrl+/",
@@ -48,19 +48,36 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+up",
-        "command": "indent-jump.moveUp"
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
     },
     {
-        "key": "ctrl+down",
-        "command": "indent-jump.moveDown"
+        "key": "ctrl+k ctrl+s",
+        "command": "workbench.action.files.saveWithoutFormatting"
     },
     {
-        "key": "ctrl+shift+up",
-        "command": "indent-jump.selectUp"
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
     },
     {
-        "key": "ctrl+shift+down",
-        "command": "indent-jump.selectDown"
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
     }
+    
+    // {
+    //     "key": "ctrl+up",
+    //     "command": "indent-jump.moveUp"
+    // },
+    // {
+    //     "key": "ctrl+down",
+    //     "command": "indent-jump.moveDown"
+    // },
+    // {
+    //     "key": "ctrl+shift+up",
+    //     "command": "indent-jump.selectUp"
+    // },
+    // {
+    //     "key": "ctrl+shift+down",
+    //     "command": "indent-jump.selectDown"
+    // }
 ]

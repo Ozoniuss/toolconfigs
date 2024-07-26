@@ -1,0 +1,91 @@
+{
+	"editor.mouseWheelZoom": true,
+	"editor.fontSize": 16,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": null,
+	"editor.minimap.enabled": false,
+	"zenMode.hideLineNumbers": false,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.lineHeight": 1,
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
+	"editor.rulers": [80, 120],
+	"workbench.colorCustomizations": {
+		"editorRuler.foreground": "#ffffff22"
+	},
+	"go.toolsManagement.autoUpdate": true,
+	"go.formatTool": "gofmt",
+	"[go]": {
+		// "editor.semanticHighlighting.enabled": false,
+		"editor.formatOnSave": true
+	},
+	"gopls": {
+		// Add parameter placeholders when completing a function.
+		"usePlaceholders": false
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.formatOnSave": true
+	},
+	"python.analysis.autoImportCompletions": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
+	},
+	"[html]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 120,
+		"editor.rulers": []
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.printWidth": 80,
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "es5",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.renderWhitespace": "all",
+	"markdown.extension.toc.updateOnSave": false,
+	"workbench.editorAssociations": {
+		"git-rebase-todo": "default"
+	},
+	"remote.SSH.remotePlatform": {
+		"www.ozoniuss.com": "linux",
+		"ubuntu-1": "linux",
+		"hadoop-master": "linux",
+		"homeserver": "linux",
+		"192.168.0.103": "linux",
+		"192.168.1.103": "linux",
+		"192.168.0.40": "linux"
+	},
+	"workbench.colorTheme": "Default Dark+",
+	"git.openRepositoryInParentFolders": "never",
+	"snyk.advanced.cliPath": "C:\\Users\\qscxz\\AppData\\Local\\snyk-ls\\snyk-win.exe",
+	"snyk.advanced.customEndpoint": "https://app.dev.snyk.io/api",
+	"snyk.trustedFolders": [
+		"d:\\mystuff\\personal-projects\\casheer-cli",
+		"d:\\mystuff\\personal-projects\\casheer"
+	],
+	"snyk.features.preview": {},
+	"snyk.yesWelcomeNotification": false,
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"update.mode": "manual",
+	"window.zoomLevel": 1,
+	"clock.alignment": "Right",
+	"clock.format": "ddd mmm d  H:MM:ss  o",
+	"workbench.activityBar.location": "top"
+}
