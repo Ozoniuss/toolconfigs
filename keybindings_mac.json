@@ -5,16 +5,6 @@
 // I've replaced every occurence of ctrl with opt there anyway.
 [
     {
-        "key": "ctrl+cmd+[",
-        "command": "scrollLineDown",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+cmd+]",
-        "command": "scrollLineUp",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+4",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
@@ -38,7 +28,7 @@
         "when": "editorFocus || sideBarFocus"
     },
     {
-        "key": "ctrl+k ctrl+n",
+        "key": "ctrl+k n",
         "command": "explorer.newFolder",
         "when": "editorFocus || sideBarFocus"
     },
@@ -116,5 +106,61 @@
         "key": "shift+cmd+right",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "editor.action.selectAllMatches",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+pageDown",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+cmd+pageUp",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen",
+        "when": ""
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "f3",
+        "command": "search.action.focusNextSearchResult",
+        "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
+    },
+    {
+        "key": "shift+f3",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
     }
 ]
