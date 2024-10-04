@@ -62,8 +62,17 @@
     {
         "key": "ctrl+k ctrl+s",
         "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "f3",
+        "command": "search.action.focusNextSearchResult",
+        "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
+    },
+    {
+        "key": "shift+f3",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
     }
-    
     // {
     //     "key": "ctrl+up",
     //     "command": "indent-jump.moveUp"
