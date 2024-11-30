@@ -162,5 +162,10 @@
         "key": "shift+f3",
         "command": "search.action.focusPreviousSearchResult",
         "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.files.toggleActiveEditorReadonlyInSession",
+        "when": "activeEditorCanToggleReadonly && editorFocus && textInputFocus"
     }
 ]
