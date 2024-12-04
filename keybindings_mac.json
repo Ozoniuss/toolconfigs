@@ -164,8 +164,43 @@
         "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
     },
     {
-        "key": "escape",
+        "key": "ctrl+k escape",
         "command": "workbench.action.files.toggleActiveEditorReadonlyInSession",
         "when": "activeEditorCanToggleReadonly && editorFocus && textInputFocus"
+    },
+    // swap the below because you want to explicitly change editor groups
+    // remove default
+    {
+        "key": "ctrl+pageup",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+pageup",
+        "command": "-workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+pagedown",
+        "command": "-workbench.action.nextEditorInGroup"
+    },
+    // swap default
+    {
+        "key": "ctrl+pageup",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+pageup",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+pagedown",
+        "command": "workbench.action.nextEditor"
     }
 ]
