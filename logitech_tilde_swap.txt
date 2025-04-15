@@ -1,0 +1,5 @@
+To use a logitech keyboard with a Mac layout and swap the tilde
+from next to left shift to above the tab key, press fn+U for 3
+seconds.
+
+https://prosupport.logi.com/hc/en-us/articles/4407176154903-Keyboards-Special-Key-Combinations
