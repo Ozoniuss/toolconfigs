@@ -5,13 +5,17 @@
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": null,
 	"editor.minimap.enabled": false,
+	"editor.cursorSurroundingLines": 100,
 	"zenMode.hideLineNumbers": false,
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.lineHeight": 1,
 	"terminal.integrated.shellIntegration.enabled": true,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
-	"editor.rulers": [80, 120],
+	"editor.rulers": [
+		80,
+		120
+	],
 	"workbench.colorCustomizations": {
 		"editorRuler.foreground": "#ffffff22"
 	},
