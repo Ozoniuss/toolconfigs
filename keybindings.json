@@ -1,5 +1,8 @@
 // Place your key bindings in this file to override the defaults
 [
+    // These are needed because ctrl+up and ctrl+down are modified with the
+    // indent-jump extension. Plus I always keep my cursor at the center
+    // of the screen with a config so this is a bit messed up.
     {
         "key": "ctrl+alt+pageDown",
         "command": "scrollLineDown",
@@ -11,11 +14,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+4",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
-    },
-    {
         "key": "ctrl+alt+=",
         "command": "workbench.action.increaseViewSize"
     },
@@ -23,34 +21,34 @@
         "key": "ctrl+alt+-",
         "command": "workbench.action.decreaseViewSize"
     },
-    {
-        "key": "ctrl+alt+`",
-        "command": "workbench.action.terminal.newWithProfile",
-        "when": "terminal.active"
-    },
+    // This just makes sure it's created in the directory you are in, or in the
+    // same folder the current file you're viewing is in.
     {
         "key": "ctrl+n",
         "command": "explorer.newFile",
         "when": "editorFocus || sideBarFocus"
     },
     {
-        "key": "ctrl+k n",
+        "key": "ctrl+k ctrl+n",
         "command": "explorer.newFolder",
         "when": "editorFocus || sideBarFocus"
     },
+    // If this is ever needed for whatever reason
     {
         "key": "ctrl+alt+n",
-        "command": "workbench.action.files.newUntitledFile",
+        "command": "workbench.action.files.newUntitledFile"
     },
     {
         "key": "ctrl+k ctrl+/",
         "command": "editor.action.blockComment",
         "when": "textInputFocus"
     },
+    // I think this is the same as ctrl+p so why have it
     {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
+    // Sometimes useful if the formatter is stupid (and previous binding removed)
     {
         "key": "ctrl+k ctrl+s",
         "command": "workbench.action.files.saveWithoutFormatting"
@@ -59,10 +57,14 @@
         "key": "ctrl+k ctrl+shift+s",
         "command": "-workbench.action.files.saveWithoutFormatting"
     },
+    // I know the keybindings lol (and had to remove it to add save without
+    // formatting)
     {
         "key": "ctrl+k ctrl+s",
         "command": "-workbench.action.openGlobalKeybindings"
     },
+    // I use these with global search. I never understood why file search has
+    // it but global search does not. Took a while to find the proper condition
     {
         "key": "f3",
         "command": "search.action.focusNextSearchResult",
@@ -73,24 +75,30 @@
         "command": "search.action.focusPreviousSearchResult",
         "when": "view.workbench.view.search.visible && (hasSearchResult || inSearchEditor)"
     },
+    // This is kind of a vim visual mode. Sometimes you don't have version
+    // control and just want to read a file
     {
         "key": "ctrl+k escape",
         "command": "workbench.action.files.toggleActiveEditorReadonlyInSession",
         "when": "activeEditorCanToggleReadonly && editorFocus && textInputFocus"
     },
-    // swap the below because you want to explicitly change editor groups
-    // remove default
+    // Make ctrl+pageup stay in the same editor group. You change groups with
+    // something like ctrl + 2 anyway.
+    // To move an editor between groups use the default shortcut which is 
+    // ctrl + alt + left/right
     {
         "key": "ctrl+pageup",
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "ctrl+k ctrl+pageup",
-        "command": "-workbench.action.previousEditorInGroup"
-    },
-    {
         "key": "ctrl+pagedown",
         "command": "-workbench.action.nextEditor"
+    },
+    // Tbh these may as well stay unset. This key combination is fucking
+    // retarded
+    {
+        "key": "ctrl+k ctrl+pageup",
+        "command": "-workbench.action.previousEditorInGroup"
     },
     {
         "key": "ctrl+k ctrl+pagedown",
@@ -113,6 +121,7 @@
         "key": "ctrl+k ctrl+pagedown",
         "command": "workbench.action.nextEditor"
     }
+    // requires indent-jump, commented to not mess up shortcuts until installed
     // {
     //     "key": "ctrl+up",
     //     "command": "indent-jump.moveUp"
