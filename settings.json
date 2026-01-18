@@ -1,65 +1,86 @@
 {
-	"editor.mouseWheelZoom": true,
-	"editor.fontSize": 16,
-	"editor.wordWrap": "on",
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": null,
-	"editor.minimap.enabled": false,
 	"editor.cursorSurroundingLines": 100,
+	"editor.defaultFormatter": null,
+	"editor.fontSize": 16,
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.wordWrap": "on",
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [
+		80,
+		120
+	],
+	// may be a bit confusing to use find at first because it no longer jumps
+	// to results so you may assume there's no result
 	"editor.find.cursorMoveOnType": false,
-	"zenMode.hideLineNumbers": false,
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.lineHeight": 1,
 	"terminal.integrated.shellIntegration.enabled": true,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
-	"editor.rulers": [
-		80,
-		120
-	],
 	"workbench.colorCustomizations": {
 		"editorRuler.foreground": "#ffffff22"
 	},
-	"go.toolsManagement.autoUpdate": true,
-	"go.formatTool": "gofmt",
-	"[go]": {
-		// "editor.semanticHighlighting.enabled": false,
-		"editor.formatOnSave": true
+	"workbench.editorAssociations": {
+		"git-rebase-todo": "default"
 	},
-	"gopls": {
-		// Add parameter placeholders when completing a function.
-		"usePlaceholders": false
-	},
+	"workbench.colorTheme": "Default Dark Modern",
+	// mostly use shortcuts to access it so I'd rather just have the extra space
+	"workbench.activityBar.location": "top",
+	// requires material icon extension
+	"workbench.iconTheme": "material-icon-theme",
+	// don't be THAT zen
+	"window.zoomLevel": 1,
+	"zenMode.hideLineNumbers": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"git.openRepositoryInParentFolders": "never",
+	// automatic updates once broke my vscode
+	"update.mode": "manual",
+	// mostly formatting
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
 		"editor.formatOnSave": true
 	},
-	"python.analysis.autoImportCompletions": true,
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter",
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
-		}
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced",
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"[go]": {
+		// "editor.semanticHighlighting.enabled": false,
+		"editor.formatOnSave": true
 	},
 	"[html]": {
 		"editor.wordWrap": "wordWrapColumn",
 		"editor.wordWrapColumn": 120,
 		"editor.rulers": []
 	},
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.renderWhitespace": "all",
-	"markdown.extension.toc.updateOnSave": false,
-	"workbench.editorAssociations": {
-		"git-rebase-todo": "default"
+	"[python]": {
+		// "editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
 	},
-	"workbench.colorTheme": "Default Dark+",
-	"git.openRepositoryInParentFolders": "never",
-	"diffEditor.hideUnchangedRegions.enabled": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"update.mode": "manual",
-	"window.zoomLevel": 1,
+	// extensions
+	// clock
 	"clock.alignment": "Right",
 	"clock.format": "ddd mmm d  H:MM:ss  o",
-	"workbench.activityBar.location": "top"
+	// go
+	"go.toolsManagement.autoUpdate": true,
+	"go.formatTool": "gofmt",
+	"gopls": {
+		// Add parameter placeholders when completing a function.
+		"usePlaceholders": false
+	},
+	// markdown
+	"markdown.extension.toc.updateOnSave": false,
+	// python (pylance)
+	"python.analysis.autoImportCompletions": true,
 }
