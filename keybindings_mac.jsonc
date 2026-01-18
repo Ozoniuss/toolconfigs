@@ -1,24 +1,30 @@
 // Place your key bindings in this file to override the defaults
+// Requires Windows VSCODE extensions shortcut, otherwise would probably
+// need some more manual work
+// Requires ctrl+left and ctrl+right to be disabled from Mission Control,
+// I've replaced every occurence of ctrl with opt there anyway.
+// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaults
 [
     // These are needed because ctrl+up and ctrl+down are modified with the
     // indent-jump extension. Plus I always keep my cursor at the center
     // of the screen with a config so this is a bit messed up.
     {
-        "key": "ctrl+alt+pageDown",
+        "key": "ctrl+cmd+pageDown",
         "command": "scrollLineDown",
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+pageUp",
+        "key": "ctrl+cmd+pageUp",
         "command": "scrollLineUp",
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+=",
+        "key": "ctrl+cmd+=",
         "command": "workbench.action.increaseViewSize"
     },
     {
-        "key": "ctrl+alt+-",
+        "key": "ctrl+cmd+-",
         "command": "workbench.action.decreaseViewSize"
     },
     // This just makes sure it's created in the directory you are in, or in the
@@ -26,16 +32,16 @@
     {
         "key": "ctrl+n",
         "command": "explorer.newFile",
-        "when": "editorFocus || sideBarFocus"
+        "when": "editorFocus || sideBarVisible"
     },
     {
         "key": "ctrl+k ctrl+n",
         "command": "explorer.newFolder",
-        "when": "editorFocus || sideBarFocus"
+        "when": "editorFocus || sideBarVisible"
     },
     // If this is ever needed for whatever reason
     {
-        "key": "ctrl+alt+n",
+        "key": "ctrl+cmd+n",
         "command": "workbench.action.files.newUntitledFile"
     },
     {
@@ -46,7 +52,8 @@
     // I think this is the same as ctrl+p so why have it
     {
         "key": "ctrl+e",
-        "command": "-workbench.action.quickOpen"
+        "command": "-workbench.action.quickOpen",
+        "when": ""
     },
     // Sometimes useful if the formatter is stupid (and previous binding removed)
     {
@@ -91,14 +98,14 @@
         "command": "-workbench.action.previousEditor"
     },
     {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
+        "key": "ctrl+k ctrl+pageup",
+        "command": "-workbench.action.previousEditorInGroup"
     },
     // Tbh these may as well stay unset. This key combination is fucking
     // retarded
     {
-        "key": "ctrl+k ctrl+pageup",
-        "command": "-workbench.action.previousEditorInGroup"
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
     },
     {
         "key": "ctrl+k ctrl+pagedown",
@@ -120,7 +127,7 @@
     {
         "key": "ctrl+k ctrl+pagedown",
         "command": "workbench.action.nextEditor"
-    }
+    },
     // requires indent-jump, commented to not mess up shortcuts until installed
     // {
     //     "key": "ctrl+up",
@@ -138,4 +145,84 @@
     //     "key": "ctrl+shift+down",
     //     "command": "indent-jump.selectDown"
     // }
+    // mac-specific tweaks, mostly to simulate the "alt" with "cmd"
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "editor.action.selectAllMatches",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "cmd+r cmd+m",
+        "command": "-workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+        "key": "ctrl+k ctrl+m",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    }
 ]
