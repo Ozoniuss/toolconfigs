@@ -67,25 +67,8 @@
 	"workbench.editorAssociations": {
 		"git-rebase-todo": "default"
 	},
-	"remote.SSH.remotePlatform": {
-		"www.ozoniuss.com": "linux",
-		"ubuntu-1": "linux",
-		"hadoop-master": "linux",
-		"homeserver": "linux",
-		"192.168.0.103": "linux",
-		"192.168.1.103": "linux",
-		"192.168.0.40": "linux"
-	},
 	"workbench.colorTheme": "Default Dark+",
 	"git.openRepositoryInParentFolders": "never",
-	"snyk.advanced.cliPath": "C:\\Users\\qscxz\\AppData\\Local\\snyk-ls\\snyk-win.exe",
-	"snyk.advanced.customEndpoint": "https://app.dev.snyk.io/api",
-	"snyk.trustedFolders": [
-		"d:\\mystuff\\personal-projects\\casheer-cli",
-		"d:\\mystuff\\personal-projects\\casheer"
-	],
-	"snyk.features.preview": {},
-	"snyk.yesWelcomeNotification": false,
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"update.mode": "manual",
