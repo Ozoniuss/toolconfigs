@@ -1,18 +1,79 @@
 // Place your key bindings in this file to override the defaults
 [
-    // These are needed because ctrl+up and ctrl+down are modified with the
-    // indent-jump extension. Plus I always keep my cursor at the center
-    // of the screen with a config so this is a bit messed up.
+    // Back/forward navigation when looking through code.
+    //
+    // For some stupid reason, Linux has different defaults for forward and
+    // backward navigation. Removing these defaults for something more sane.
+    // Plus, I've remapped them to something else anyway.
     {
-        "key": "ctrl+alt+pageDown",
-        "command": "scrollLineDown",
-        "when": "textInputFocus"
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
     },
     {
-        "key": "ctrl+alt+pageUp",
-        "command": "scrollLineUp",
-        "when": "textInputFocus"
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
     },
+    {
+        "key": "ctrl+alt+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    // Creating multiple cursors up and down from the current cursor.
+    // Linux had both ctrl+shift+up/down and shift+alt+up/down. It didn't really
+    // make sense to have two, and I didn't like either. Changing them for the
+    // windows variant (plus will use one of them for indent jump). On windows
+    // the shift+alt ones are used to duplicate a block of text below or above,
+    // which is very useful to me.
+    // removal
+    {
+        "key": "ctrl+shift+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    // new
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Helpful for resizing a particular window.
     {
         "key": "ctrl+alt+=",
         "command": "workbench.action.increaseViewSize"
@@ -57,8 +118,7 @@
         "key": "ctrl+k ctrl+shift+s",
         "command": "-workbench.action.files.saveWithoutFormatting"
     },
-    // I know the keybindings lol (and had to remove it to add save without
-    // formatting)
+    // This is really not needed.
     {
         "key": "ctrl+k ctrl+s",
         "command": "-workbench.action.openGlobalKeybindings"
@@ -120,22 +180,45 @@
     {
         "key": "ctrl+k ctrl+pagedown",
         "command": "workbench.action.nextEditor"
-    }
+    },
     // requires indent-jump, commented to not mess up shortcuts until installed
-    // {
-    //     "key": "ctrl+up",
-    //     "command": "indent-jump.moveUp"
-    // },
-    // {
-    //     "key": "ctrl+down",
-    //     "command": "indent-jump.moveDown"
-    // },
-    // {
-    //     "key": "ctrl+shift+up",
-    //     "command": "indent-jump.selectUp"
-    // },
-    // {
-    //     "key": "ctrl+shift+down",
-    //     "command": "indent-jump.selectDown"
-    // }
+    {
+        "key": "ctrl+up",
+        "command": "indent-jump.moveUp"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "indent-jump.moveDown"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "indent-jump.selectUp"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "indent-jump.selectDown"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "copyPathWithLines.copy",
+        "when": "editorTextFocus"
+    },
+    // These are needed because ctrl+up and ctrl+down are modified with the
+    // indent-jump extension. Plus I always keep my cursor at the center
+    // of the screen with a config so this is a bit messed up.
+    {
+        "key": "ctrl+alt+pageDown",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+pageUp",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    }
 ]
