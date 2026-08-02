@@ -198,6 +198,41 @@
         "key": "ctrl+shift+down",
         "command": "indent-jump.selectDown"
     },
+    // Copying paths is a complete mess on Linux. Why the fuck have two different
+    // shortcuts for the same thing in different contexts??
+    // This uses my own preference for file path copying, plus I also have
+    // an extension which will include the line numbers.
+    {
+        "key": "ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+alt+c",
+        "command": "-copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k shift+alt+c",
+        "command": "copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+k shift+alt+c",
+        "command": "copyRelativeFilePath",
+        "when": "editorFocus"
+    },
+    // overwrite to my extension, removal needed for windows only.
     {
         "key": "shift+alt+c",
         "command": "-copyFilePath",
@@ -207,6 +242,11 @@
         "key": "shift+alt+c",
         "command": "copyPathWithLines.copy",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+c",
+        "command": "copyFilePath",
+        "when": "filesExplorerFocus"
     },
     // These are needed because ctrl+up and ctrl+down are modified with the
     // indent-jump extension. Plus I always keep my cursor at the center
