@@ -200,8 +200,8 @@
     },
     // Copying paths is a complete mess on Linux. Why the fuck have two different
     // shortcuts for the same thing in different contexts??
-    // This uses my own preference for file path copying, plus I also have
-    // an extension which will include the line numbers.
+    // This uses my own preference for default file path copying which is
+    // shift+alt+c
     {
         "key": "ctrl+alt+c",
         "command": "-copyFilePath",
@@ -222,31 +222,32 @@
         "command": "-copyRelativeFilePath",
         "when": "editorFocus"
     },
+    // my preference (just what I got used to)
     {
         "key": "ctrl+k shift+alt+c",
-        "command": "copyRelativeFilePath",
-        "when": "!editorFocus"
-    },
-    {
-        "key": "ctrl+k shift+alt+c",
-        "command": "copyRelativeFilePath",
-        "when": "editorFocus"
-    },
-    // overwrite to my extension, removal needed for windows only.
-    {
-        "key": "shift+alt+c",
-        "command": "-copyFilePath",
-        "when": "editorTextFocus"
+        "command": "copyRelativeFilePath"
     },
     {
         "key": "shift+alt+c",
-        "command": "copyPathWithLines.copy",
-        "when": "editorTextFocus"
+        "command": "copyFilePath"
+    },
+    // my shortcut preferences
+    {
+        "key": "ctrl+'",
+        "command": "addToAgentContext.pickAction",
+        "when": "editorTextFocus && !auxiliaryBarVisible"
     },
     {
-        "key": "shift+alt+c",
-        "command": "copyFilePath",
-        "when": "filesExplorerFocus"
+        "key": "ctrl+'",
+        "command": "addToAgentContext.sendToAgent",
+        "args": "claude",
+        "when": "editorTextFocus && auxiliaryBarVisible && activeAuxiliary == workbench.view.extension.claude-sidebar-secondary"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "addToAgentContext.sendToAgent",
+        "args": "codex",
+        "when": "editorTextFocus && auxiliaryBarVisible && activeAuxiliary == workbench.view.extension.codexSecondaryViewContainer"
     },
     // These are needed because ctrl+up and ctrl+down are modified with the
     // indent-jump extension. Plus I always keep my cursor at the center
