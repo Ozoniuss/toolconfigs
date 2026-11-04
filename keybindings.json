@@ -234,20 +234,47 @@
     // my shortcut preferences
     {
         "key": "ctrl+'",
-        "command": "addToAgentContext.pickAction",
-        "when": "editorTextFocus && !auxiliaryBarVisible"
-    },
-    {
-        "key": "ctrl+'",
-        "command": "addToAgentContext.sendToAgent",
+        "command": "addToAgentContext.sendSelectionToLastAgent",
         "args": "claude",
-        "when": "editorTextFocus && auxiliaryBarVisible && activeAuxiliary == workbench.view.extension.claude-sidebar-secondary"
+        "when": "editorTextFocus && activeAuxiliary == workbench.view.extension.claude-sidebar-secondary"
     },
     {
         "key": "ctrl+'",
-        "command": "addToAgentContext.sendToAgent",
+        "command": "addToAgentContext.sendSelectionToLastAgent",
         "args": "codex",
-        "when": "editorTextFocus && auxiliaryBarVisible && activeAuxiliary == workbench.view.extension.codexSecondaryViewContainer"
+        "when": "editorTextFocus && activeAuxiliary == workbench.view.extension.codexSecondaryViewContainer"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "addToAgentContext.sendExplorerSelectionToLastAgent",
+        "args": "claude",
+        "when": "filesExplorerFocus && !inputFocus && activeAuxiliary == workbench.view.extension.claude-sidebar-secondary"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "addToAgentContext.sendExplorerSelectionToLastAgent",
+        "args": "codex",
+        "when": "filesExplorerFocus && !inputFocus && activeAuxiliary == workbench.view.extension.codexSecondaryViewContainer"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "addToAgentContext.openLastChatInSidebar",
+        "args": "claude",
+        "when": "activeAuxiliary == workbench.view.extension.claude-sidebar-secondary"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "addToAgentContext.openLastChatInSidebar",
+        "args": "codex",
+        "when": "activeAuxiliary == workbench.view.extension.codexSecondaryViewContainer"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "addToAgentContext.openLastChatInSidebar"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "addToAgentContext.openChatInSidebar"
     },
     // These are needed because ctrl+up and ctrl+down are modified with the
     // indent-jump extension. Plus I always keep my cursor at the center
