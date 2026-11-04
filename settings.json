@@ -83,4 +83,18 @@
 	"markdown.extension.toc.updateOnSave": false,
 	// python (pylance)
 	"python.analysis.autoImportCompletions": true,
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"claudeCode.preferredLocation": "sidebar",
+	"claudeCode.hideOnboarding": true,
+	"claudeCode.focusView": true,
+	"addToAgentContext.agents": {
+		"claude": {
+			"pasteExplorerPathsDirectly": true
+		}
+	}
 }
